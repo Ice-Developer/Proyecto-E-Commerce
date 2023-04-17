@@ -1,7 +1,8 @@
 .prodCard{
-    background-color: rgb(16, 154, 108);
+    border: 0.125rem solid rgb(47, 45, 45);
     border-radius: 10px;
     width: 15rem;
+    height: 20rem;
     padding: .8rem;
     margin: 1rem;
     display: flex;
@@ -17,8 +18,8 @@
     object-fit: contain;
 }
 .btnProd{
-    background-color: blue;
-    color: aliceblue;
+    background-color:rgb(13, 54, 89);
+    color: white;
     border: none;
     border-radius: 10px;
     width: 7rem;

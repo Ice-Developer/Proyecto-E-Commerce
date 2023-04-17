@@ -13,70 +13,22 @@ const NavBar = () => {
                 <ul>
                     <li>
                         <NavLink to ={`/Descargable/1`}>
-                            <div className='card'>
-                                <div className='img'>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <div className='detalle'>
-                                    <h4>
-                                        Aca vas a poder encontrar material descargable completamente gratis!!
-                                    </h4>
-                                </div>
-                            </div>
+                        <img className='imgNav' src="../img/descargables.png" alt="Descargables" />
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to={`/Academia/2`}>
-                        <div className='card'>
-                                <div className='img'>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <div className='detalle'>
-                                    <h4>
-                                        Cursos, Mentorias, MasterClass y nuestros servicios para empresas en un solo lugar
-                                    </h4>
-                                </div>
-                            </div>
+                        <img className='imgNav' src="../img/academia.png" alt="Academia de Asesores" />
                         </NavLink> 
                     </li>
                     <li>
                         <NavLink to={`/Productos/3`}>
-                            <div className='card'>
-                                <div className='img'>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <div className='detalle'>
-                                    <h4>
-                                        Todos nuestros productos y mas para adornar tu espacio de trabajo
-                                    </h4>
-                                </div>
-                            </div>
+                                <img className='imgNav' src="../img/chucherias.png" alt="Chucherias" />
                             </NavLink> 
                     </li>
                     <li>
                         <NavLink to={`/ServWeb/4`}>
-                        <div className='card'>
-                                <div className='img'>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <div className='detalle'>
-                                    <h4>
-                                        Diseñamos a tu medida tu pagina web, dandote el mejor servicio y precio del mercado.
-                                    </h4>
-                                </div>
-                            </div>
+                        <img className='imgNav' src="../img/diseño.png" alt="Diseño Web" />
                         </NavLink> 
                     </li>
                 </ul>

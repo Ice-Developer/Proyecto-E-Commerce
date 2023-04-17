@@ -18,7 +18,7 @@ const ItemListContainer = () => {
     }, [idCategoria])
     
     return (
-        <div>
+        <div className='iLC'>
             <h2>Nuestros Productos</h2>
             <ItemList productos={productos}/>
         </div>

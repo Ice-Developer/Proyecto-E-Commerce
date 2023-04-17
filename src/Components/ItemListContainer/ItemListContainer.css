@@ -1,0 +1,8 @@
+.iLC{
+    padding-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
