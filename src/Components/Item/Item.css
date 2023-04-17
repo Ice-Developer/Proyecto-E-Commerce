@@ -1,0 +1,28 @@
+.prodCard{
+    background-color: rgb(16, 154, 108);
+    border-radius: 10px;
+    width: 15rem;
+    padding: .8rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.imgProd{
+    width: 9.375rem;
+    object-fit: contain;
+}
+.btnProd{
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    width: 7rem;
+    padding: .5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
