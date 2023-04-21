@@ -1,8 +1,19 @@
 import React from 'react'
 import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget'
-import { NavLink, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
+import { useState, useEffect } from 'react'
+import NavList from '../NavList/NavList';
+import { getItemNav } from '../../asyncmock';
 const NavBar = () => {
+    const [navegador, setNavegador] = useState ([]);
+
+    useEffect (()=>{
+        getItemNav()
+        .then (res => setNavegador(res))
+        .catch (error => console.error(error))
+    },[])
+
     return (
         <header>
             <div className='logoNav'>
@@ -11,26 +22,7 @@ const NavBar = () => {
             </Link> 
             <nav>
                 <ul>
-                    <li>
-                        <NavLink to ={`/Descargable/1`}>
-                        <img className='imgNav' src="../img/descargables.png" alt="Descargables" />
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to={`/Academia/2`}>
-                        <img className='imgNav' src="../img/academia.png" alt="Academia de Asesores" />
-                        </NavLink> 
-                    </li>
-                    <li>
-                        <NavLink to={`/Productos/3`}>
-                                <img className='imgNav' src="../img/chucherias.png" alt="Chucherias" />
-                            </NavLink> 
-                    </li>
-                    <li>
-                        <NavLink to={`/ServWeb/4`}>
-                        <img className='imgNav' src="../img/diseño.png" alt="Diseño Web" />
-                        </NavLink> 
-                    </li>
+                    <NavList nav={navegador}/>
                 </ul>
             </nav>
             </div>

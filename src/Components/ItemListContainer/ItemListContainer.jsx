@@ -17,11 +17,12 @@ const ItemListContainer = () => {
         .catch (error => console.error(error))
     }, [idCategoria])
     
+    const colorBack = {backgroundColor:`#EDF6F9`}
     return (
-        <div className='iLC'>
+        <div className='iLC' style={colorBack} >
             <h2>Nuestros Productos</h2>
             <ItemList productos={productos}/>
         </div>
     )
 }
-export default ItemListContainer;
+export default ItemListContainer

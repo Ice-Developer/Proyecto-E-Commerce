@@ -2,3 +2,24 @@
     width: 50px;
     background: none;
 }
+.cantidad{
+    display: flex;
+    padding: 5px;
+    border: solid 3px black;
+    background-color: #AEC3B0;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    position: absolute;
+    bottom:30px;
+    left: 30px;
+    color: black;
+    font-weight: bold;
+}
+.cartDiv{
+    position: relative;
+}
+.cart{
+    position: relative;
+}

@@ -14,8 +14,9 @@ const ItemDetailContainer = () => {
             .then(res => setProducto(res))
     },[idItem])
     
+    const colorBack = {backgroundColor:`#EDF6F9`}
     return (
-        <div className="iDC">
+        <div className="iDC" style={colorBack}>
         <ItemDetail {...producto}/>
         </div>
     )

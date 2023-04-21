@@ -2,7 +2,7 @@
     border: 0.125rem solid rgb(47, 45, 45);
     border-radius: 10px;
     width: 15rem;
-    height: 20rem;
+    height: auto;
     padding: .8rem;
     margin: 1rem;
     display: flex;
@@ -11,13 +11,18 @@
     align-items: center;
     text-align: center;
 }
-
+.prodCard p{
+    font-size: 1rem;
+}
 
 .imgProd{
+    border-radius: 10px;
+    overflow: hidden;
     width: 9.375rem;
     object-fit: contain;
 }
 .btnProd{
+    margin: 15px;
     background-color:rgb(13, 54, 89);
     color: white;
     border: none;
