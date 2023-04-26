@@ -14,8 +14,10 @@ export const CartProvider = ({children}) =>{
     }
 
     const delProd = (id) =>{
-        const cartUpg = cart.filter (prod => prod.itemId !== id);
+        console.log("Eliminando producto con id: ", id);
+        const cartUpg = cart.filter (prod => prod.itemId !== id );
         setCart (cartUpg);
+        console.log(cartUpg)
     }
 
     const cleanCart = () =>{

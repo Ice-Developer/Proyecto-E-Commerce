@@ -40,13 +40,3 @@ import "./ItemCounter.css"
 
 
 export default ItemCounter
-
-/*                 {stock >1 ? 
-                (<>
-                <div className="pulsadores">
-                    <button onClick={decrementar}> - </button>
-                    <p> {contador} </p>
-                    <button onClick={incrementar}> + </button>
-                </div>
-                <button className="agregar" onClick={ () => funcionAgregar(contador)} disabled={stock === 0} >Agregar al Carrito</button></>) : 
-                (<button className="agregar" onClick={ () => funcionAgregar(contador)} disabled={stock === 0} >Agregar al Carrito</button>)} */

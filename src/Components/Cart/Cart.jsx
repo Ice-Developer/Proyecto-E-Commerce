@@ -4,9 +4,9 @@ import { CartContext } from "../Context/CartContext"
 import CartItem from "../CartItem/CartItem"
 
 const Cart = () => {
-    const {cart, cleanCart, totalCart, precioCart} = useContext (CartContext);
+    const {cart, cleanCart, precioCart} = useContext (CartContext);
     
-    if (totalCart===0){
+    if (cart.length===0){
         return(
             <>
             <h2>Carrito de compras vacio</h2>
