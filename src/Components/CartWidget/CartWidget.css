@@ -1,24 +1,40 @@
+.contenedorCarrito{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+}
+.textCartWidget{
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
 .imgCarrito{
-    width: 50px;
+    width: 35px;
     background: none;
 }
 .cantidad{
     display: flex;
     padding: 5px;
-    border: solid 3px black;
+    border: solid 2px black;
     background-color: #AEC3B0;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    width: 20px;
+    width: 8px;
+    height: 8px;
     position: absolute;
-    bottom:30px;
-    left: 30px;
+    bottom:25px;
+    left: 25px;
     color: black;
     font-weight: bold;
 }
 .cartDiv{
+    right: 20px;
     position: relative;
+    height: auto;
 }
 .cart{
     position: relative;

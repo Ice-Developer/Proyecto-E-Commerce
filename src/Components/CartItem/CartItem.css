@@ -1,0 +1,114 @@
+.contenedorCartItem{
+    display: grid;
+    place-items: center;
+}
+
+.cardProdCart{
+    width: 400px;
+    display: flex;
+    gap: 30px;
+    background: rgba( 125, 153, 187, 0.35 );
+    backdrop-filter: blur( 11px );
+    -webkit-backdrop-filter: blur( 11px );
+    border-radius: 10px;
+}
+.contImgProdCart{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgProdCart{
+    width: 180px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    margin:10px;
+}
+.detProdCart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 20px;
+}
+
+.btnBorrar {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    position: relative;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 5px .2px #00000035;
+    box-shadow: 1px 1px 5px .2px #00000035;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    transition-delay: .2s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+  }
+  
+  .btnBorrar:hover {
+    width: 110px;
+    transition-delay: .2s;
+  }
+  
+  .btnBorrar:hover > .paragraph {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: .4s;
+    transition-delay: .4s;
+  }
+  
+  .btnBorrar:hover > .icon-wrapper .icon {
+    transform: scale(1.1);
+  }
+  
+  .btnBorrar:hover > .icon-wrapper .icon path {
+    stroke: #de2929;
+  }
+  
+  .paragraph {
+    color: #de2929;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 0.875rem;
+    margin-right: 10px;
+    padding-left: 10px;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .icon-wrapper {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon {
+    transform: scale(.9);
+    transition: .2s linear;
+  }
+  
+  .icon path {
+    stroke: #000;
+    stroke-width: 1.5px;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+  }

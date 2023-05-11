@@ -10,16 +10,18 @@ const CartWidget = () => {
 
     const imgCarrito = "../img/carrito.png"
     return (
+        <div className='contenedorCarrito'>
+
+        <p className='textCartWidget'>Mi Carrito</p>
         <div className='cartDiv'>
             <Link to='/Cart' className='cart'>
             <img className='imgCarrito' src= {imgCarrito} alt="Carrito" />
             <div className='cantidad'>
-            {
-                totalCart(cart)
-            }
+            {    totalCart(cart)  }
             </div>
-            </Link>
-            
+            </Link>    
+        </div>
+
         </div>
     )
 }

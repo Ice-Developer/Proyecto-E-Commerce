@@ -1,0 +1,215 @@
+.contenedorGralCheckOut{
+    display: flex;
+    width: 100%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+}
+.formContacto{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border-bottom: solid 1px #858282;
+}
+
+.formPago{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: solid 1px #858282;
+}
+input::-webkit-inner-spin-button {
+display: none;
+}
+.contPago{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 0 20px 20px 20px;
+    justify-content: space-between;
+}
+.c1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+.inputSelect{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 39px;
+    gap: 10px;   
+}
+.select{
+    padding: 10px;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    width: 100%;
+    text-align-last: center;
+}
+
+.selectorFP{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.labelForm{
+    padding-left: 10px;
+    font-weight: 500;
+}
+.contBtnSubmit{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+.contDetalle{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    padding: 30px;
+    width:40%;
+}
+.contenedorCartDetCheckOut{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    width:90%;   
+}
+.detCartCheckOut, .totalPagar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.totalPagar{
+    border: solid 1px #31303062 ;
+}
+.contTot{
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%; 
+    background-color: #76a7b5;
+}
+.prodCartCheckOut{    
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+.eachProdCheckOut{
+    border: solid 1px #31303062 ;
+    padding: 10px;
+}
+.tituloCantidad{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+}
+
+.title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+}
+
+.title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+}
+
+.input {
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.msjError {
+    color: rgb(239, 230, 230);
+}
+
+.error {
+    color: red;
+}
+
+.submit:disabled {
+    background-color: #858282;
+    color: black;
+    cursor: none;
+}
+
+.submit:disabled:hover {
+    background-color: #858282;
+}
+
+.submit {
+    width: 60%;
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+}
+
+.btnLog {
+    background-color: transparent;
+    border: none;
+    color: royalblue;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: rgb(56, 90, 194);
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+.orden{
+    color:darkslategray;
+    font-weight: 700;
+    
+}

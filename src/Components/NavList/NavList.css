@@ -1,3 +1,10 @@
 .contNavegador{
     display: flex;
+    flex-wrap: wrap;
+   margin-bottom: 10px;
+}
+@media (max-width:880px){
+    .contNavegador{
+        justify-content: center;
+    }
 }

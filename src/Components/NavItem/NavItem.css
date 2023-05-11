@@ -55,3 +55,12 @@
     height: 100%;
     transform: translateY(100%);
 }
+@media (max-width:880px){
+    .detalle{
+        font-size: 0.7rem;
+    }
+    .detalle h4{
+        text-align: center;
+        padding: 0.625rem;
+    }
+}
