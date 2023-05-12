@@ -44,7 +44,7 @@ const ItemDetail = ({itemId, nom, precio,img, det, stock}) => {
                             <h1>{nom} </h1>
                             <h2>${precio} </h2>
                             {
-                                stock === undefined  ? (<h3> Producto Digital - Siempre Disponible</h3>): (<h3>Cantidad disponible {stock}</h3>)
+                                isNaN(stock) ? (<h3> Producto Digital - Siempre Disponible</h3>): (<h3>Cantidad disponible {stock}</h3>)
                             }
                             <p>{det}</p>
                         </div>
